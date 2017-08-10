@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,127 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmY-qI-fgE">
+                                <rect key="frame" x="92.5" y="100" width="190" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="18M-8T-RtQ"/>
+                                    <constraint firstAttribute="width" constant="190" id="XKy-sE-hsr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqt-yp-k4z">
+                                <rect key="frame" x="119" y="138" width="136" height="30"/>
+                                <color key="backgroundColor" red="0.47514253854751587" green="0.77975702285766602" blue="0.33810436725616455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gHb-gB-67c"/>
+                                    <constraint firstAttribute="width" constant="136" id="gWg-0B-54S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lookup barcode">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchBarcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEu-U0-iQY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lA-ll-SUR">
+                                <rect key="frame" x="67" y="176" width="240" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="o4z-zb-D1V"/>
+                                    <constraint firstAttribute="height" constant="70" id="pqh-Hn-Cdj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XA9-Tz-1bx">
+                                <rect key="frame" x="67" y="254" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="l1b-5K-oA4"/>
+                                    <constraint firstAttribute="height" constant="30" id="yzm-FD-yt8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dw-Yp-Gdu">
+                                <rect key="frame" x="127" y="292" width="120" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1pU-yY-Ohq"/>
+                                    <constraint firstAttribute="height" constant="30" id="CrD-5v-0pp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC, ISBN or EAN:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-JI-aZ0">
+                                <rect key="frame" x="16" y="71" width="135.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135.5" id="BR5-Jw-UsF"/>
+                                    <constraint firstAttribute="height" constant="18" id="BVS-XK-vO5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU0-c8-bTH">
+                                <rect key="frame" x="52" y="28" width="270" height="30"/>
+                                <color key="backgroundColor" red="0.48320138454437256" green="0.79151135683059692" blue="0.34559991955757141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="85l-9U-Cux"/>
+                                    <constraint firstAttribute="width" constant="270" id="cTL-pz-Pxi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Use the camera to scan a barcode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCm-nR-4Yd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84950929880142212" green="0.95145052671432495" blue="0.9919237494468689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XA9-Tz-1bx" firstAttribute="top" secondItem="5lA-ll-SUR" secondAttribute="bottom" constant="8" id="2Bg-Hq-8ps"/>
+                            <constraint firstItem="CU0-c8-bTH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gD-bQ-dHa"/>
+                            <constraint firstItem="cqt-yp-k4z" firstAttribute="top" secondItem="AmY-qI-fgE" secondAttribute="bottom" constant="8" id="3gk-Px-0wU"/>
+                            <constraint firstItem="XA9-Tz-1bx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3u2-Km-XpL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bR9-JI-aZ0" secondAttribute="leading" id="7aN-xY-wxg"/>
+                            <constraint firstItem="AmY-qI-fgE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="94G-y7-gMY"/>
+                            <constraint firstItem="AmY-qI-fgE" firstAttribute="top" secondItem="bR9-JI-aZ0" secondAttribute="bottom" constant="11" id="NHK-jL-V4k"/>
+                            <constraint firstItem="5lA-ll-SUR" firstAttribute="top" secondItem="cqt-yp-k4z" secondAttribute="bottom" constant="8" id="Qqd-UO-bHm"/>
+                            <constraint firstItem="8dw-Yp-Gdu" firstAttribute="top" secondItem="XA9-Tz-1bx" secondAttribute="bottom" constant="8" id="TaG-va-3Pw"/>
+                            <constraint firstItem="cqt-yp-k4z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V7l-qH-Rrv"/>
+                            <constraint firstItem="8dw-Yp-Gdu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XOF-5M-MrG"/>
+                            <constraint firstItem="bR9-JI-aZ0" firstAttribute="top" secondItem="CU0-c8-bTH" secondAttribute="bottom" constant="13" id="dEn-Q1-KeB"/>
+                            <constraint firstItem="5lA-ll-SUR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jP5-EU-r7C"/>
+                            <constraint firstItem="CU0-c8-bTH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xrq-MN-rpq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemASINNo" destination="8dw-Yp-Gdu" id="fPS-4v-jxl"/>
+                        <outlet property="itemBarcode" destination="AmY-qI-fgE" id="4za-pz-nTi"/>
+                        <outlet property="itemBrand" destination="XA9-Tz-1bx" id="XcO-yZ-iPF"/>
+                        <outlet property="itemTitle" destination="5lA-ll-SUR" id="Z2k-vb-Jxt"/>
+                        <outlet property="lookupButton" destination="cqt-yp-k4z" id="VqV-7r-ngx"/>
+                        <outlet property="scanButton" destination="CU0-c8-bTH" id="sgK-P4-t4f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="155.17241379310346"/>
         </scene>
     </scenes>
 </document>

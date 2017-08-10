@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99482ADD1F387B46003FD3E9 /* VideoOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99482ADC1F387B46003FD3E9 /* VideoOverlayViewController.m */; };
 		99F925691F3474E60052F871 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F925681F3474E60052F871 /* main.m */; };
 		99F9256C1F3474E60052F871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9256B1F3474E60052F871 /* AppDelegate.m */; };
-		99F9256F1F3474E60052F871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9256E1F3474E60052F871 /* ViewController.m */; };
+		99F9256F1F3474E60052F871 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9256E1F3474E60052F871 /* MainViewController.m */; };
 		99F925721F3474E60052F871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F925701F3474E60052F871 /* Main.storyboard */; };
 		99F925751F3474E60052F871 /* SimpleBarcodeScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99F925731F3474E60052F871 /* SimpleBarcodeScanner.xcdatamodeld */; };
 		99F925771F3474E60052F871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F925761F3474E60052F871 /* Assets.xcassets */; };
@@ -36,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99482ADB1F387B46003FD3E9 /* VideoOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoOverlayViewController.h; sourceTree = "<group>"; };
+		99482ADC1F387B46003FD3E9 /* VideoOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoOverlayViewController.m; sourceTree = "<group>"; };
 		99F925641F3474E60052F871 /* SimpleBarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F925681F3474E60052F871 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F9256A1F3474E60052F871 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99F9256B1F3474E60052F871 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		99F9256D1F3474E60052F871 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		99F9256E1F3474E60052F871 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		99F9256D1F3474E60052F871 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		99F9256E1F3474E60052F871 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		99F925711F3474E60052F871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99F925741F3474E60052F871 /* SimpleBarcodeScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleBarcodeScanner.xcdatamodel; sourceTree = "<group>"; };
 		99F925761F3474E60052F871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,8 +108,10 @@
 			children = (
 				99F9256A1F3474E60052F871 /* AppDelegate.h */,
 				99F9256B1F3474E60052F871 /* AppDelegate.m */,
-				99F9256D1F3474E60052F871 /* ViewController.h */,
-				99F9256E1F3474E60052F871 /* ViewController.m */,
+				99F9256D1F3474E60052F871 /* MainViewController.h */,
+				99F9256E1F3474E60052F871 /* MainViewController.m */,
+				99482ADB1F387B46003FD3E9 /* VideoOverlayViewController.h */,
+				99482ADC1F387B46003FD3E9 /* VideoOverlayViewController.m */,
 				99F925701F3474E60052F871 /* Main.storyboard */,
 				99F925761F3474E60052F871 /* Assets.xcassets */,
 				99F925781F3474E60052F871 /* LaunchScreen.storyboard */,
@@ -210,6 +215,7 @@
 				TargetAttributes = {
 					99F925631F3474E60052F871 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PMGKW98MEW;
 						ProvisioningStyle = Automatic;
 					};
 					99F9257F1F3474E60052F871 = {
@@ -276,9 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F9256F1F3474E60052F871 /* ViewController.m in Sources */,
+				99F9256F1F3474E60052F871 /* MainViewController.m in Sources */,
 				99F9256C1F3474E60052F871 /* AppDelegate.m in Sources */,
 				99F925691F3474E60052F871 /* main.m in Sources */,
+				99482ADD1F387B46003FD3E9 /* VideoOverlayViewController.m in Sources */,
 				99F925751F3474E60052F871 /* SimpleBarcodeScanner.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PMGKW98MEW;
 				INFOPLIST_FILE = SimpleBarcodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FlinkleLabs.SimpleBarcodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +450,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PMGKW98MEW;
 				INFOPLIST_FILE = SimpleBarcodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FlinkleLabs.SimpleBarcodeScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +524,7 @@
 				99F925961F3474E70052F871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99F925971F3474E70052F871 /* Build configuration list for PBXNativeTarget "SimpleBarcodeScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +533,7 @@
 				99F925991F3474E70052F871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99F9259A1F3474E70052F871 /* Build configuration list for PBXNativeTarget "SimpleBarcodeScannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +542,7 @@
 				99F9259C1F3474E70052F871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
